@@ -28,7 +28,7 @@ const useWeather = () => {
         message: "Fetching weather data...",
       });
 
-      const response = await fetchWeatherData(
+      const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${latitude}&appid=${
           import.meta.env.VITE_WEATHER_API_KEY
         }&units=metric`
