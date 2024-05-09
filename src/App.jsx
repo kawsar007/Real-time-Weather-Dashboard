@@ -3,19 +3,22 @@ import "./App.css";
 
 import Header from "./components/header/header";
 import WeatgerBoard from "./components/weather/weather-board";
+import { WeatherProvider } from "./provider";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="grid place-items-center h-screen">
-      <Header />
-      <main>
-        <section className="">
-          <WeatgerBoard />
-        </section>
-      </main>
-    </div>
+    <WeatherProvider>
+      <div className="grid place-items-center h-screen">
+        <Header />
+        <main>
+          <section className="">
+            <WeatgerBoard />
+          </section>
+        </main>
+      </div>
+    </WeatherProvider>
   );
 }
 
