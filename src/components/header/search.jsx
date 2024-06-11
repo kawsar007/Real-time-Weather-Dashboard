@@ -10,8 +10,8 @@ const Search = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("searchTerm", searchTerm);
     const fetchedLocation = getLocationByName(searchTerm);
+    console.log("fetchedLocation--->", fetchedLocation);
     setSelectedLocation({ ...fetchedLocation });
   };
 

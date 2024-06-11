@@ -9,7 +9,6 @@ import Wind from "../../assets/icons/wind.svg";
 
 const WeatherCondition = () => {
   const { weatherData } = useContext(WeatherContext);
-  console.log(weatherData);
   const {
     maxTemperature,
     minTemperature,
