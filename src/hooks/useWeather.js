@@ -22,7 +22,6 @@ const useWeather = () => {
   const [error, setError] = useState(null);
 
   const { selectedLocation } = useContext(LocationContext);
-  console.log(selectedLocation);
 
   const fetchWeatherData = async (latitude, longitude) => {
     try {
