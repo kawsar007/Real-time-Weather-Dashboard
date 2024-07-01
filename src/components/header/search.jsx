@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import searchSvg from "../../assets/search.svg";
-// import { locationContext } from "../../context";
 import { LocationContext } from "../../context";
 import { getLocationByName } from "../../data/location-data";
 import { useDebounce } from "../../hooks";
@@ -10,7 +9,6 @@ const Search = () => {
 
   const doSearch = useDebounce((term) => {
     const fetchedLocation = getLocationByName(term);
-    console.log("fetchedLocation--->", fetchedLocation);
     setSelectedLocation({ ...fetchedLocation });
   }, 500);
 

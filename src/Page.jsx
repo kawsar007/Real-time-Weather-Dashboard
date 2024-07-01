@@ -17,8 +17,6 @@ function Page() {
   const { weatherData, loading } = useContext(WeatherContext);
   const [climateImage, setClimateImage] = useState("");
 
-  console.log("ClimateImage", climateImage);
-
   function getBackgroundImage(climate) {
     switch (climate) {
       case "Rain":
