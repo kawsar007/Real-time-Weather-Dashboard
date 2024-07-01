@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import { FavouriteContext } from "../../context";
+import { FavouriteContext, LocationContext } from "../../context";
 
 const FavouriteListModal = () => {
   const { favourites } = useContext(FavouriteContext);
+  const { setSelectedLocation } = useContext(LocationContext);
 
   console.log("favourites", favourites);
   return (
@@ -12,7 +13,9 @@ const FavouriteListModal = () => {
         {favourites.length > 0 ? (
           favourites.map((fav) => (
             <li key={fav.location} className="hover:bg-gray-200">
-              Dhaka
+              <a onClick={() => setSelectedLocation({ ...fav })}>
+                {fav?.location}
+              </a>
             </li>
           ))
         ) : (

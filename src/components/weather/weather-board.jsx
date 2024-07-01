@@ -5,7 +5,7 @@ import WeatherHeadline from "./weather-headline";
 
 import { WeatherContext } from "../../context";
 
-const WeatgerBoard = () => {
+const WeatherBoard = () => {
   const { weatherData, loading } = useContext(WeatherContext);
 
   console.log("weatherData ----> ", weatherData);
@@ -28,4 +28,4 @@ const WeatgerBoard = () => {
   );
 };
 
-export default WeatgerBoard;
+export default WeatherBoard;

@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-import Header from "./components/header/header";
-import WeatgerBoard from "./components/weather/weather-board";
+import Page from "./Page";
 import {
   FavouriteProvider,
   LocationProvider,
@@ -16,14 +15,15 @@ function App() {
     <LocationProvider>
       <WeatherProvider>
         <FavouriteProvider>
-          <div className="grid place-items-center h-screen">
+          <Page />
+          {/* <div className="grid place-items-center h-screen">
             <Header />
             <main>
               <section className="">
                 <WeatgerBoard />
               </section>
             </main>
-          </div>
+          </div> */}
         </FavouriteProvider>
       </WeatherProvider>
     </LocationProvider>
