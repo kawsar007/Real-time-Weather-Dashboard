@@ -1,5 +1,3 @@
-import React from "react";
-// import cloud from "../../assets/icons/cloud.svg";
 import { useContext } from "react";
 import CloudIcon from "../../assets/cloud.svg";
 import pin from "../../assets/pin.svg";

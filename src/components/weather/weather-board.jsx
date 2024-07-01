@@ -1,4 +1,3 @@
-import React from "react";
 import AddToFavourite from "./add-to-favourite";
 import WeatherCondition from "./weather-condition";
 import WeatherHeadline from "./weather-headline";
