@@ -16,14 +16,6 @@ function App() {
       <WeatherProvider>
         <FavouriteProvider>
           <Page />
-          {/* <div className="grid place-items-center h-screen">
-            <Header />
-            <main>
-              <section className="">
-                <WeatgerBoard />
-              </section>
-            </main>
-          </div> */}
         </FavouriteProvider>
       </WeatherProvider>
     </LocationProvider>
